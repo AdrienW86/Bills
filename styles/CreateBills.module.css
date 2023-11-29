@@ -184,16 +184,35 @@
 
 .toggleBtn {
     width: 120px;
-    margin: 0 auto
+    height: 40px;
+    color:#004AAD;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 1px solid #004AAD;
+    transition: .4s ease-in-out;
+}
+
+.toggleBtn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #004AAD;
 }
 
 .modal {
     position: absolute;
     width: 100%;
-    top: 20vh;
-    height: 80vh;
+    top: 0;
+    height: 100vh;
     background-color: rgb(253, 253, 253);
 }
+
+.modalTitle {
+    font-size: 2em;
+    color: #004AAD;
+    margin-bottom: 100px;
+}
+
 .modalRow {
     display: flex;
     flex-direction: column;
@@ -207,5 +226,23 @@
 
 .modalInput {
     width: 90%;
-    margin: 10px auto;
+    margin: 20px auto;
 }
+
+.modalToggleBtn {
+    width: 120px;
+    height: 40px;
+    margin: 20px auto;
+    color: green;
+    border-radius: 12px;
+    border: 2px solid green;
+    transition: .4s ease-in-out;
+    background-color: rgb(254, 255, 254);
+}
+
+.modalToggleBtn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: green;
+}
+

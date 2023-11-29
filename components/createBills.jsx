@@ -167,6 +167,7 @@ const Toggle = () => {
         <button className={styles.toggleBtn}  onClick={Toggle}> Modifier </button>
       {toggle && 
         <section className={styles.modal}>     
+        <h2 className={styles.modalTitle}> Informations client </h2>
           <div className={styles.modalRow}>
               <label className={styles.modalLabel}>Nom du client:</label>
               <input className={styles.modalInput} type="text" value={clientName} onChange={(e) => setClientName(e.target.value)} />
@@ -186,6 +187,7 @@ const Toggle = () => {
               <input className={styles.modalInput} type="text" placeholder="Code postal" value={clientAddress.zipcode} onChange={(e) => setClientAddress({ ...clientAddress, zipcode: e.target.value })} />
               <input className={styles.modalInput} type="text" placeholder="Ville" value={clientAddress.city} onChange={(e) => setClientAddress({ ...clientAddress, city: e.target.value })} />
           </div>
+          <button className={styles.modalToggleBtn}  onClick={Toggle}> Valider </button>
         </section> 
       }
       <div className={styles.container}>    
